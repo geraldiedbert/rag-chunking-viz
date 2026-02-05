@@ -1,0 +1,5 @@
+{
+  "name": "RAG Chunking Visualizer",
+  "description": "An interactive tool to visualize how document chunking works in Retrieval-Augmented Generation (RAG). Upload a PDF (simulated) and adjust chunking parameters to see how the document is segmented for processing.",
+  "requestFramePermissions": []
+}
