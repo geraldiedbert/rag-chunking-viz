@@ -54,6 +54,17 @@ interface FileUploadProps {
   isLoading: boolean;
 }
 
+interface LabeledValue {
+  label: string;
+}
+ 
+function printLabel(labeledObj: LabeledValue) {
+  console.log(labeledObj.label);
+}
+ 
+let myObj = { size: 10, label: "Size 10 Object",  name: "john"};
+printLabel(myObj);
+
 const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload, fileName, isLoading }) => {
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
